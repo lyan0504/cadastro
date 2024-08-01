@@ -1,0 +1,79 @@
+body{
+    font-family: 'roboto', sans-serif;
+    background-color: rgb(12, 27, 65);
+    color: aliceblue;
+}
+
+a{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+#login{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nome input{
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: rgb(32, 30, 30);
+    color: white;
+    margin-bottom: 15px;
+}
+
+.email input{
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: rgb(32, 30, 30);
+    color: white;
+}
+
+.senha input{
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: rgb(32, 30, 30);
+    color:white
+    margin-top 15px;
+}
+
+.entrar input{
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(134, 243, 134);
+    color: black;
+}
+
+input::placeholder{
+color: antiquewhite;
+}
+
+h1{
+   color: #FAFAFA; 
+}
+
+.caixa {
+    margin-top: 65px;
+}
+
+img{
+    width: 200px;
+    height: 120px;
+}
+imput:focus{
+    outline: none;
+}
