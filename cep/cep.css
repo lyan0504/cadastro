@@ -1,0 +1,35 @@
+body{
+    background-color: rgba(89, 133, 246);
+    margin-top: 250px;
+}
+
+#resultado {
+    padding: 10px;
+    margin-top: 10px;
+    max-width: 350px;
+    background-color: lightyellow;
+    border: 10px solid grey;
+    border-radius: 10px;
+    box-shadow: 2 px 2px grey;
+}
+
+h1{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+button{
+    margin-left: 10px;
+}
+
+label{
+    margin-left: 490px;
+}
+
+#resultado{
+    margin-left: 490px;
+    border-radius: 50px;
+    border-width: 0px;
+}
