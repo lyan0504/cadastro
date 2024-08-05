@@ -4,28 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acquamap</title>
-   
+    <title>Acquamap - Login</title>
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <div id="login">
-
-        <img src="img/WhatsApp Image 2024-07-31 at 19.32.17.jpeg" alt="">
+        <img src="img/WhatsApp Image 2024-07-31 at 19.32.17.jpeg" alt="Acquamap Logo">
         <h1>LOGIN</h1>
-
         <div class="caixa">
             <div class="email">
-                <input type= "email" placeholder="E-mail">
+                <input type="email" id="emailLogin" placeholder="E-mail" required>
             </div>
             <div class="senha">
-               <input type="password" placeholder="senha"> 
+                <input type="password" id="senhaLogin" placeholder="Senha" required>
             </div>
             <div class="entrar">
-                <p>Ainda não tem uma conta?<a href="cadastro.html">crie uma. </a> </p>
-                <input type="submit" volue="Entar">
+                <p>Ainda não tem uma conta? <a href="cadastro.html">Crie uma.</a></p>
+                <input type="submit" value="Entrar" onclick="login()">
             </div>
         </div>
     </div>
+
+    <script>
+        function login() {
+            const email = document.getElementById('emailLogin').value;
+            const senha = document.getElementById('senhaLogin').value;
+
+            // Obter as informações de cadastro armazenadas
+            const emailCadastrado = localStorage.getItem('email');
+            const senhaCadastrada = localStorage.getItem('senha');
+
+            if (email === emailCadastrado && senha === senhaCadastrada) {
+                // Login bem-sucedido, redirecionar para a página de consulta de CEP
+                window.location.href = 'cep.html';
+            } else {
+                alert('E-mail ou senha incorretos!');
+            }
+        }
+    </script>
 </body>
-</html>                                                                         
+</html>
+
