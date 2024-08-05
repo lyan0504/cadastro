@@ -1,63 +1,90 @@
-body{
-    font-family: 'roboto', sans-serif;
-    background-color: rgb(89, 133, 246);
-    color: aliceblue;
-    margin-top: 200px;
-}
-a{
-    text-decoration: none;
-    color: aquamarine;
-}
-#login{
-    text-align: center;
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-}
-.email input{
-    border-radius: 15px;
-    border: none;
-    width: 250px;
-    height: 40px;
-    padding-left: 15px;
-    background-color: rgb(32, 30, 30);
-    color: white;
-    margin-bottom: 10px;
-    
-   
-}
-.senha input{
-    border-radius: 15px;
-    border: none;
-    width: 250px;
-    height: 40px;
-    padding-left: 15px;
-    background-color: rgb(32, 30, 30);
-    margin-bottom: 10px;
-    color:white
-}
-.entrar input{
-    cursor: pointer;
-    width: 120px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    background-color: rgb(134, 243, 134);
-    color: black;
-    
-
-}
-input::placeholder{
-color: antiquewhite;
+    height: 100vh;
 }
 
-h1{
-   color: #FAFAFA; 
+#login, #cadastro {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
 }
-img{
-    width: 200px;
-    height: 120px;
+
+img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
 }
-imput:focus{
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.caixa {
+    margin-top: 20px;
+}
+
+.caixa div {
+    margin-bottom: 15px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #0066cc;
     outline: none;
+}
+
+.entrar {
+    margin-top: 20px;
+}
+
+.entrar p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.entrar a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.entrar a:hover {
+    text-decoration: underline;
+}
+
+input[type="submit"] {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #005bb5;
 }

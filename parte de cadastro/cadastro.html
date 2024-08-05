@@ -4,30 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acquamap</title>
-   
+    <title>Acquamap - Cadastro</title>
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div id="login">
-
-        <img src="img/WhatsApp Image 2024-07-31 at 19.32.17.jpeg" alt="">
+    <div id="cadastro">
+        <img src="img/WhatsApp Image 2024-07-31 at 19.32.17.jpeg" alt="Acquamap Logo">
         <h1>CADASTRO</h1>
         <div class="caixa">
             <div class="email">
-                <input type= "email" placeholder="E-mail">
+                <input type="email" id="emailCadastro" placeholder="E-mail" required>
             </div>
             <div class="senha">
-               <input type="password" placeholder="senha"> 
+                <input type="password" id="senhaCadastro" placeholder="Senha" required>
             </div>
             <div class="senha">
-                <input type="password" placeholder="confirme a sua senha">
+                <input type="password" id="confirmaSenha" placeholder="Confirme a sua senha" required>
             </div>
             <div class="entrar">
-                <p>Já tem uma conta?<a href="login.html">entre aq. </a> </p>
-                <input type="submit" volue="Entar">
+                <p>Já tem uma conta? <a href="login.html">Entre aqui.</a></p>
+                <input type="submit" value="Cadastrar" onclick="cadastrar()">
             </div>
         </div>
     </div>
+
+    <script>
+        function cadastrar() {
+            const email = document.getElementById('emailCadastro').value;
+            const senha = document.getElementById('senhaCadastro').value;
+            const confirmaSenha = document.getElementById('confirmaSenha').value;
+
+            if (senha !== confirmaSenha) {
+                alert('As senhas não coincidem!');
+                return;
+            }
+
+            // Armazenar as informações de cadastro (aqui apenas simulamos o armazenamento)
+            localStorage.setItem('email', email);
+            localStorage.setItem('senha', senha);
+
+            // Redirecionar para a página de login
+            window.location.href = 'login.html';
+        }
+    </script>
 </body>
-</html>             
+</html>
+
+         
