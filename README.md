@@ -1,1 +1,1 @@
-# fazendo um sait de localização junto com api.
+# fazendo um site de localização junto com api.
